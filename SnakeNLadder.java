@@ -27,8 +27,13 @@ public class SnakeNLadder {
 		
 		if(player_position<=0)
 			player_position=0;
+		int previous_position = 0;
+		if(player_position>100)
+			player_position=previous_position;
+			
 		if(player_position==wining_Position)
 			System.out.println("Player reach winning position");
+		break;
 			
 		}
 
